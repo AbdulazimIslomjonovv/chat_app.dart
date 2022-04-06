@@ -4,7 +4,7 @@ import '../read_txt/read_txt.dart';
 class Create {
   static void create({required String string}) {
     if (dataBasedaYoqmi(name: string.substring(1))) {
-      data_base_contact.add(ContactDataBase(name: string.substring(1)));
+      data_base_contact.add(ContactDataBase(name: string.substring(1), druzyalar: []));
       currentName = string.substring(1);
     } else {
       print('bor odamni qayta kiritmoqchisiz!');

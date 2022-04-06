@@ -1,6 +1,7 @@
 import '../chatting/chatting.dart';
 import '../crud/create.dart';
 import '../crud/read.dart';
+import '../druzyalar/druzyaalr.dart';
 import '../gal_almashtirish/gal_almashtirish.dart';
 import '../password/password.dart';
 import '../shaxsiy/shaxsiy.dart';
@@ -17,6 +18,10 @@ class ReadTxt {
       Read.read();
     } else if (listTxt[0] == ('/password')) {
       Password.AddPassword(name: currentName);
+    } else if (listTxt[0] == '/addDruzya') {
+      Druzyalar.addDruzya();
+    } else if (listTxt[0] == '/readDruzya') {
+      Druzyalar.readDruzya();
     } else if (listTxt[0].startsWith('/')) {
       Shaxsiy.shaxsiy(name: listTxt[0].substring(1));
     } else {
